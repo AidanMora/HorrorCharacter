@@ -14,7 +14,7 @@ public class Zombie extends HorrorCharacter {
     @Override
     public void flee() {
         System.out.println("You turn and run away from the " + name +
-                " (psst ur a coward! This zombie is a TWD tpy of zombie " +
+                " (psst ur a coward! This zombie is a TWD type of zombie " +
                 "so it's easy to kill! ");
     }
 

@@ -56,6 +56,7 @@ public class Werewolf extends HorrorCharacter implements Transformable{
     @Override
     public void transform() {
         transformed = !transformed; // flips from true -> false | false -> true
+        //did that for the sake of testing, so If that is removed it will transform opposite
         if (transformed) {
             System.out.println(name + " transformed into sad human form!\n");
         } else {

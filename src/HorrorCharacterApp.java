@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
+// GitHub Project: https://github.com/AidanMora/HorrorCharacter
 
 /**
  * Date: 9/22/25

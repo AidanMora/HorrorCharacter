@@ -12,7 +12,7 @@ public class Zombie extends HorrorCharacter {
      * @param vulnerabilities the zombies weaknesses
      */
     public Zombie(String name, int health, Vulnerability[] vulnerabilities) {
-        super(name, health, new Vulnerability[]{ // references the parent class to get these attributes / vulnerabilities
+        super(name, health, new Vulnerability[]{ // references the parent class to access these attributes / vulnerabilities
                 Vulnerability.BLUNT_DAMAGE,
                 Vulnerability.BULLET,
                 Vulnerability.FIRE

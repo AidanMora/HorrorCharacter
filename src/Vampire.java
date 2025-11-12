@@ -13,11 +13,14 @@ public class Vampire extends HorrorCharacter implements Transformable {
      * @param health hp of the vampire
      * @param vulnerabilities the vampire's weaknesses
      */
-    public Vampire(String name, int health, Vulnerability[] vulnerabilities) {
-        super(name, health, new Vulnerability[]{ // references the parent class to get these attributes / vulnerabilities
-                Vulnerability.CRUCIFIX,
-                Vulnerability.SUNLIGHT});
-        transformed = false; // defaults to false (not transformed)
+    public Vampire(String name, int health, Vulnerability[] vulnerabilities, boolean transformed) {
+        super(name, health, vulnerabilities);
+        this.transformed = transformed;
+    }
+
+    public Vampire(String name, int health, boolean transformed) {
+        super(name, health, new Vulnerability[]{ Vulnerability.SUNLIGHT });
+        this.transformed = transformed;
     }
 
     /**

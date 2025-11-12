@@ -13,12 +13,16 @@ public class Werewolf extends HorrorCharacter implements Transformable{
      * @param health hp of the werewolf
      * @param vulnerabilities the werewolf's weaknesses
      */
-    public Werewolf(String name, int health, Vulnerability[] vulnerabilities) {
+    public Werewolf(String name, int health, Vulnerability[] vulnerabilities, boolean transformed) {
+        super(name, health, vulnerabilities);
+        this.transformed = transformed;
+    }
+
+    public Werewolf(String name, int health, boolean transformed) {
         super(name, health, new Vulnerability[]{
-                Vulnerability.SILVER,
-                Vulnerability.DECAPITATION,
-                Vulnerability.WOLFSBANE});
-        transformed = false;
+                Vulnerability.WOLFSBANE
+        });
+        this.transformed = transformed;
     }
 
     /**
